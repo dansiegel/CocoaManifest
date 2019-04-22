@@ -1,0 +1,8 @@
+<Project>
+
+  <PropertyGroup>
+    <CocoaInfoPlist>$(_AppBundlePath)Info.plist</CocoaInfoPlist>
+    <CocoaEntitlementsPlist>$(_AppBundlePath)Entitlements.plist</CocoaEntitlementsPlist>
+  </PropertyGroup>
+  
+</Project>

@@ -1,0 +1,13 @@
+<Project>
+
+  <UsingTask TaskName="CocoaManifest.Build.Tasks.GenerateAttributedPlistsTask"
+             AssemblyFile="$(MSBuildThisFileDirectory)CocoaManifest.Build.Tasks.dll"/>
+
+  <Target Name="GenerateInterfaceDefinitionFromAttributes"
+            AfterTargets="_CoreCompileInterfaceDefinitions"
+          Condition=" Exists('$(CocoaInfoPlist)') AND Exists('$(CocoaEntitlementsPlist)') ">
+    <GenerateAttributedPlistsTask AssemblyPath="$(OutputPath)/$(AssemblyName).dll"
+                                  InfoPlistItem="$(CocoaInfoPlist)"
+                                  EntitlementsItem="$(CocoaEntitlementsPlist)" />
+  </Target>
+</Project>

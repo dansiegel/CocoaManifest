@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <Description>Provides Build Targets for configuring the Info.plist and Entitlements.plist via attributes in code</Description>
+    <PackageTags>ios;devops</PackageTags>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <PackageId>CocoaManifest.Attributes</PackageId>
+    <Authors>Dan Siegel</Authors>
+    <Company>AvantiPoint</Company>
+    <Product>CocoaManifest.Attributes</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RootNamespace>CocoaManifest.Build</RootNamespace>
+    <Version>0.0.1-pre5</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Build.Tasks.Core" Version="16.0.461" PrivateAssets="all" />
+    <ProjectReference Include="../CocoaManifest/CocoaManifest.csproj" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="build/*.props;build/*.targets" Pack="true" PackagePath="build/xamarin.ios10" />
+    <Content Include="$(OutputPath)/*.dll" Pack="true" PackagePath="build/xamarin.ios10" />
+    <Content Include="$(OutputPath)/*.pdb" Pack="true" PackagePath="build/xamarin.ios10" />
+    <Content Include="../CocoaManifest/bin/$(Configuration)/xamarin.ios10/CocoaManifest.dll" Link="lib/xamarin.ios10/CocoaManifest.dll" Pack="true" PackagePath="lib/xamarin.ios10" />
+    <Content Include="../CocoaManifest/bin/$(Configuration)/xamarin.ios10/CocoaManifest.pdb" Link="lib/xamarin.ios10/CocoaManifest.pdb" Pack="true" PackagePath="lib/xamarin.ios10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="build/*.props;build/*.targets" Pack="true" PackagePath="build/xamarin.mac" />
+    <Content Include="$(OutputPath)/*.dll" Pack="true" PackagePath="build/xamarin.mac" />
+    <Content Include="$(OutputPath)/*.pdb" Pack="true" PackagePath="build/xamarin.mac" />
+    <Content Include="../CocoaManifest/bin/$(Configuration)/xamarin.mac2.0/CocoaManifest.dll" Link="lib/xamarin.mac/CocoaManifest.dll" Pack="true" PackagePath="lib/xamarin.mac" />
+    <Content Include="../CocoaManifest/bin/$(Configuration)/xamarin.mac2.0/CocoaManifest.pdb" Link="lib/xamarin.mac/CocoaManifest.pdb" Pack="true" PackagePath="lib/xamarin.mac" />
+  </ItemGroup>
+
+</Project>

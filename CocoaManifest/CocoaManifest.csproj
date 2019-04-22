@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="MSBuild.Sdk.Extras/2.0.24">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;xamarin.ios10;xamarin.mac2.0</TargetFrameworks>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+</Project>

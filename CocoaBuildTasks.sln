@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CocoaManifest.Build.Tasks", "CocoaManifest.Build.Tasks\CocoaManifest.Build.Tasks.csproj", "{38E3CE50-3C05-40AF-A765-45BED06F232B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CocoaManifest", "CocoaManifest\CocoaManifest.csproj", "{710B1300-3CE5-4D29-B247-F5AE70233E7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38E3CE50-3C05-40AF-A765-45BED06F232B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E3CE50-3C05-40AF-A765-45BED06F232B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E3CE50-3C05-40AF-A765-45BED06F232B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E3CE50-3C05-40AF-A765-45BED06F232B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{710B1300-3CE5-4D29-B247-F5AE70233E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{710B1300-3CE5-4D29-B247-F5AE70233E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{710B1300-3CE5-4D29-B247-F5AE70233E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{710B1300-3CE5-4D29-B247-F5AE70233E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5372A38-50B8-4357-ABDB-B70BE6C78DE9}
+	EndGlobalSection
+EndGlobal
